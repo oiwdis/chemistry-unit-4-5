@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#214c43">
+  <meta name="description" content="Your Honors Chemistry Units 4 and 5 study companion: complete summaries, worked answers, and quizzes with explanations.">
+  <title>Chemistry Study Lab · Units 4 & 5</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23214c43'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='40' fill='%23fff' font-family='serif'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar"><div class="brand"><span class="brand-icon">C<span>h</span></span><div>chemistry<span class="brand-sub">THE STUDY LAB</span></div></div><span class="course-label"><span class="status-dot"></span> HONORS CHEMISTRY <span class="separator">/</span> UNITS 4 & 5</span><button id="print" class="icon-button" title="Print the complete summary">↗ <span>Print guide</span></button></header>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy"><div class="eyebrow">YOUR NEXT “I GET IT” STARTS HERE</div><h1>Small atoms.<br><em>Big understanding.</em></h1><p>From atomic structure to chemical names.<br>Everything in your study guide, one concept at a time.</p><div class="hero-meta"><span>02 <small>UNITS</small></span><span>10 <small>TOPICS</small></span><span><b id="question-count">—</b> <small>PRACTICE QUESTIONS</small></span></div></div>
+      <div class="hero-art" aria-hidden="true"><span class="art-label">THE BUILDING BLOCKS OF MATTER</span><svg viewBox="0 0 440 310"><defs><radialGradient id="nucleus"><stop offset="0" stop-color="#bed2a0"/><stop offset="1" stop-color="#6e976c"/></radialGradient></defs><g fill="none" stroke="#789b87" stroke-width="1"><ellipse cx="220" cy="155" rx="157" ry="58" transform="rotate(-32 220 155)"/><ellipse cx="220" cy="155" rx="157" ry="58" transform="rotate(32 220 155)"/><ellipse cx="220" cy="155" rx="157" ry="58" transform="rotate(90 220 155)"/></g><circle cx="220" cy="155" r="38" fill="url(#nucleus)"/><circle cx="211" cy="143" r="8" fill="#d8e3bb"/><circle cx="233" cy="153" r="9" fill="#aec695"/><circle cx="216" cy="169" r="10" fill="#8fb180"/><g fill="#f4e4a7" stroke="#e6d592" stroke-width="5"><circle cx="95" cy="207" r="7"/><circle cx="331" cy="244" r="7"/><circle cx="230" cy="4" r="7"/></g><path d="M260 156h92" stroke="#b3c4b4" stroke-dasharray="3 4"/><text x="304" y="145" fill="#d3dfd1" font-size="12" font-family="monospace">nucleus</text></svg><span class="art-footer">01 — ATOMIC STRUCTURE <span>p⁺ · n⁰ · e⁻</span></span></div>
+    </section>
+    <div class="workspace-bar"><div role="tablist" aria-label="Study mode" class="tabs"><button role="tab" id="summary-tab" aria-controls="summary-panel" aria-selected="true" tabindex="0"><span>▤</span> Summary</button><button role="tab" id="quiz-tab" aria-controls="quiz-panel" aria-selected="false" tabindex="-1"><span>✧</span> Quiz yourself</button></div><span class="save-label"><span class="status-dot"></span> Progress saved on this device</span></div>
+    <section id="summary-panel" role="tabpanel" aria-labelledby="summary-tab">
+      <div class="summary-layout"><aside class="sidebar"><div class="eyebrow">YOUR STUDY PATH</div><h2>A little progress,<br>every session.</h2><div class="progress-label"><span>Topics reviewed</span><strong id="review-count">0 / 10</strong></div><div class="progress-track"><div id="review-progress"></div></div><nav id="topic-nav" aria-label="Summary topics"></nav><div class="sidebar-note"><span>✦</span><p><strong>Make it stick.</strong><br>Read a topic, close your notes, then try a few questions.</p></div></aside><div class="summary-content"><div class="section-heading"><div><div class="eyebrow">READ. CONNECT. REMEMBER.</div><h2>Your complete review</h2></div><span class="source-badge">Based on your study guide</span></div><div class="summary-controls"><div class="filters" aria-label="Filter by unit"><button class="selected" data-filter="all" aria-pressed="true">All topics</button><button data-filter="4" aria-pressed="false">Unit 4</button><button data-filter="5" aria-pressed="false">Unit 5</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a concept…" aria-label="Search summary topics"></label></div><div id="topics"></div><div id="empty-search" class="empty" hidden>No matching topics. Try “ions,” “acid,” or “Dalton.”</div><div class="summary-end"><span>Ready to put it into practice?</span><button class="text-button" id="summary-to-quiz">Take a quiz <span>↗</span></button></div></div></div>
+    </section>
+    <section id="quiz-panel" role="tabpanel" aria-labelledby="quiz-tab" hidden><div id="quiz-root"></div></section>
+    <footer><span class="footer-brand">chemistry <i>·</i> the study lab</span><span>Built around your Honors Chemistry Units 4–5 study guide.</span><span>One concept closer.</span></footer>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>This study app needs JavaScript enabled to show the summary and quizzes.</noscript>
+</body>
+</html>
